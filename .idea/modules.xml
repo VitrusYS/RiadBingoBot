@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PokemonBot.iml" filepath="$PROJECT_DIR$/.idea/PokemonBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RiadBingoBot.iml" filepath="$PROJECT_DIR$/.idea/RiadBingoBot.iml" />
     </modules>
   </component>
 </project>

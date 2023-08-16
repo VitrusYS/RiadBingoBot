@@ -2,8 +2,8 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('embed')
-        .setDescription('Returns an embed.'),
+        .setName('makebingo')
+        .setDescription('Returns an embed of a Bingo.'),
     async execute(interaction, client) {
         const embed = new EmbedBuilder()
             .setTitle(`Bingo Card for ${interaction.user.username}`)
@@ -15,13 +15,8 @@ module.exports = {
             .setAuthor({
                 url: `https://www.youtube.com`,
                 iconURL: interaction.user.displayAvatarURL(),
-                name: interaction.user.username + ' Author',
+                name: interaction.user.username,
             })
-            .setFooter({
-                iconURL: client.user.displayAvatarURL(),
-                text: 'Footer'
-            })
-            .setURL('https://github.com/VitrusYS/PokemonBot#readme')
             .addFields([
                 {
                     name: `testfieldname1`,
