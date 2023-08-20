@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const {adminId, devRoleId, logChannelId} = process.env
-const {updateData} = require("../../misc/updateDataHelper");
+const {updateData} = require("../../misc/dataManager");
 const {createLogString, logToConsole} = require("../../misc/log");
 
 module.exports = {

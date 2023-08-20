@@ -102,5 +102,16 @@ module.exports = {
         })
 
         return getGeneral.data.values[1];
+    },
+    shuffleArray: function (array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    },
+    getJson: function (filepath) {
+        const jsonData = fs.readFileSync(filepath, 'utf-8');
+        return JSON.parse(jsonData);
     }
 }
